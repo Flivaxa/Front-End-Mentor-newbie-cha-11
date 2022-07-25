@@ -1,0 +1,128 @@
+/* Start Variables */
+:root {
+    --Primary-Violet: hsl(257, 40%, 49%);
+    --Primary-Soft-Magenta: hsl(300, 69%, 71%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* End Global Rules */
+body {
+    background-color: var(--Primary-Violet);
+    background-image: url(../images/bg-mobile.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url(../images/bg-desktop.svg);
+    }
+}
+.container header {
+    padding: 50px 0 90px;
+}
+.container header .logo {
+    width: 150px;
+}
+.container main .land {
+    color: white;
+    text-align: center;
+}
+.container main .land img {
+    width: 100%;
+}
+.container main .land .info h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+}
+.container main .land .info p {
+    line-height: 1.7;
+}
+.container main .land .info a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white;
+    color: var(--Primary-Violet);
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 80px;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+.container main .land .info a:hover {
+    background-color: var(--Primary-Soft-Magenta);
+    color: white;
+}   
+.container main .social {
+    margin-top: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+@media (min-width: 768px) {
+    .container main .land {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        text-align: unset;
+    }
+    .container main .land .info {
+        flex: 50%;
+    }
+    .container main .social {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+.container main .social a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container main .social a:hover {
+    color: var(--Primary-Soft-Magenta);
+    border-color: var(--Primary-Soft-Magenta);
+}
+.container main .social a:nth-child(2) {
+    margin: 0 15px;
+}
